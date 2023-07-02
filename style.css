@@ -1,0 +1,93 @@
+html{
+    border: 0;
+}
+
+body{
+    background-color: #FFEB00;
+}
+
+.container{
+    display: flexbox;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.mainrps{
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+img{
+    height: 150px;
+}
+
+.playAgainBtn{
+    border: 0;
+    background-color: #bbac0d;
+    width: 10%;
+    height: 40px;
+    margin-top: 5%;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.mainFont{
+    text-align: center;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
+}
+
+.marginText{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mainImg{
+    cursor: pointer;
+    display: flexbox;
+}
+
+/* Animation */
+
+@keyframes slide-right{
+    from{
+        transform: translateX(600px);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+.slide-right{
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    /* animation-play-state: paused; */
+}
+
+@keyframes slide-left{
+    from{
+        transform: translateX(-600px);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+.slide-left{
+    animation-name: slide-left;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    /* animation-play-state: paused; */
+}
